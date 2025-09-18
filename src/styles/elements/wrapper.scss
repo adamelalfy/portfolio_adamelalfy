@@ -8,9 +8,7 @@
 
     @media screen and (max-width: $breakpoint-md) {
         width: calc(100% - var(--spacing-lg));
-        background-color: green;
     }
 
     margin: 0 auto;
-    background-color: tomato;
 }
