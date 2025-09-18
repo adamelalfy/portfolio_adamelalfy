@@ -4,13 +4,13 @@
 /// Font family
 
 // :root {
-//     --font-title: 'Helvetica', sans-serif;
+//     --font-title: 'Helvetica, Arial', sans-serif;
 //     --font-paragraph: 'Lato', monospace;
 // }
 
 h1 {
     font-size: typo(95px, 300px);
-    font-family: Helvetica;
+    font-family: Helvetica, Arial;
     font-style: normal;
     font-weight: 700;
     line-height: 100%; /* 300px */
@@ -18,7 +18,7 @@ h1 {
 
 h2 {
     font-size: typo(60px, 135px);
-    font-family: Helvetica;
+    font-family: Helvetica, Arial;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -26,7 +26,7 @@ h2 {
 
 h3 {
     font-size: typo(30px, 85px);
-    font-family: Helvetica;
+    font-family: Helvetica, Arial;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -34,7 +34,7 @@ h3 {
 
 h4 {
     font-size: typo(30px, 60px);
-    font-family: Helvetica;
+    font-family: Helvetica, Arial;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -42,7 +42,7 @@ h4 {
 
 h5 {
     font-size: typo(25px, 43px);
-    font-family: Helvetica;
+    font-family: Helvetica, Arial;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
