@@ -2,12 +2,56 @@
    FONTS / SETTINGS
    ========================================================================== */
 /// Font family
-:root {
-    --font-primary: 'Montserrat', sans-serif;
-    --font-secondary: 'Fira Code', monospace;
 
-    --font-size-content: #{typo(16px, 18px)};
+// :root {
+//     --font-title: 'Helvetica', sans-serif;
+//     --font-paragraph: 'Lato', monospace;
+// }
 
-    /// Grosseur des textes
-    --font-size-h1: #{typo(28px, 42px)};
+h1 {
+    font-size: typo(95px, 300px);
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 300px */
+}
+
+h2 {
+    font-size: typo(60px, 135px);
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h3 {
+    font-size: typo(30px, 85px);
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h4 {
+    font-size: typo(30px, 60px);
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h5 {
+    font-size: typo(25px, 43px);
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+p {
+    font-size: typo(22px, 38px);
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
 }
