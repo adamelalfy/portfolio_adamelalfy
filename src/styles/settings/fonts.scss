@@ -3,13 +3,11 @@
    ========================================================================== */
 /// Font family
 :root {
-    --font-primary: 'Nunito', sans-serif;
-    --font-secondary: 'PT Sans', sans-serif;
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Fira Code', monospace;
 
-    --font-size-content: 1.8rem;
+    --font-size-content: #{typo(16px, 18px)};
 
     /// Grosseur des textes
-    --font-size-h1: 10rem;
-    --font-size-h2: 7rem;
-    --font-size-h3: 3.5rem;
+    --font-size-h1: #{typo(28px, 42px)};
 }

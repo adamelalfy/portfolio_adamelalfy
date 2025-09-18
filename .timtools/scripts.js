@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 import { copyFileSync, mkdirSync, readdirSync, statSync } from "fs";
 
-const STACK_REPO = "git@github.com:tim-cw/timtools.git";
+const STACK_REPO = "https://github.com/tim-cw/timtools.git";
 const TMP_DIR = path.resolve("tmp-stack");
 const PACKAGE_JSON_PATH = path.resolve("package.json");
 const TIMTOOLS_DIR = path.resolve(".timtools");
