@@ -23,9 +23,11 @@
 @import 'elements/body';
 @import 'elements/links';
 @import 'elements/wrapper';
+@import 'elements/buttons';
 
 // COMPONENTS
 // Composants d'interface utilisateur spécifiques.
 // C’est là que la majorité de notre travail a lieu.
 @import 'components/icons';
 @import 'components/header';
+@import 'components/hero';

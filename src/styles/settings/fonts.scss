@@ -9,11 +9,12 @@
 // }
 
 h1 {
-    font-size: typo(95px, 300px);
+    font-size: typo(95px, 250px);
     font-family: Helvetica, Arial;
     font-style: normal;
     font-weight: 700;
     line-height: 100%; /* 300px */
+    margin: 0;
 }
 
 h2 {
@@ -46,6 +47,7 @@ h5 {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin: 0;
 }
 
 p {
