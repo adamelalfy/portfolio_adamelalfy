@@ -102,6 +102,7 @@
         a {
             display: block;
             text-align: center;
+            position: relative;
 
             // copy paste des propietes "font" des p
             font-size: typo(22px, 38px);
@@ -109,6 +110,23 @@
             font-style: normal;
             font-weight: 400;
             line-height: 160%;
+
+            &:hover {
+                &::after {
+                    width: 100%;
+                }
+            }
+
+            &::after {
+                position: absolute;
+                top: 90%;
+                left: 0;
+                content: '';
+                width: 0%;
+                transition: all 0.2s $ease-out-expo;
+                height: 3px;
+                background-color: var(--color-white);
+            }
         }
     }
 
