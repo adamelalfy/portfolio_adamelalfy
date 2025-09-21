@@ -1,8 +1,75 @@
 .projets {
     .cards {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 90px;
+
         .card {
-            width: 100%;
+            height: 80vh;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+
+            @media screen and (max-width: $breakpoint-md) {
+                flex-direction: column;
+                justify-content: unset;
+                gap: 20px;
+                .card__content {
+                    width: 100%;
+                }
+            }
+
+            gap: 20px;
+            .card__media {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 55vw;
+                height: 90vh;
+
+                @media screen and (max-width: $breakpoint-md) {
+                    width: 100%;
+                    height: auto;
+                    aspect-ratio: 16 / 9;
+                }
+
+                video {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                &:hover {
+                }
+            }
+
+            .card__content {
+                position: absolute;
+                left: 55vw;
+                margin-left: 15px;
+                top: 0;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 30px;
+
+                @media screen and (max-width: $breakpoint-md) {
+                    width: 100%;
+                    margin-left: unset;
+                    margin-top: 10px;
+                    top: calc(100vw / 9);
+                    left: 0;
+                }
+
+                .card__content__logiciels {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                }
+            }
         }
     }
 }
