@@ -23,10 +23,20 @@
 
             .card__media {
                 position: absolute;
-                top: 0;
+                top: -1vh;
                 left: 0;
                 width: 55vw;
-                height: 90vh;
+                height: 102%;
+                transition: all 0.5s $ease-out-expo;
+
+                // &::after {
+                //     content: '';
+                //     position: absolute;
+                //     top: 0;
+                //     left: 0;
+                //     width: 100%;
+                //     height: 100%;
+                // }
 
                 @media screen and (max-width: $breakpoint-md) {
                     position: unset;
@@ -42,6 +52,11 @@
                 }
 
                 &:hover {
+                    width: 80vw;
+
+                    + .card__content {
+                        left: 60vw;
+                    }
                 }
             }
 
@@ -50,6 +65,9 @@
                 left: 55vw;
                 margin-left: 15px;
                 top: 0;
+                transition: all 0.7s $ease-out-quint;
+                background-color: rgba($color: #000000, $alpha: 0.4);
+                // backdrop-filt
 
                 display: flex;
                 flex-direction: column;
