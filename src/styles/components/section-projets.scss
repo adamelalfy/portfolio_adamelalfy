@@ -1,6 +1,9 @@
 .projets {
     overflow: hidden;
     .cards {
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -11,6 +14,8 @@
         }
 
         .card {
+            scroll-snap-align: start;
+
             height: 80vh;
             display: flex;
             justify-content: space-between;
