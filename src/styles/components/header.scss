@@ -1,5 +1,9 @@
 .header {
     --header-height: 100px;
+    height: var(--header-height);
+
+    display: flex;
+    align-items: center;
 
     // pour/apres la  composante header
     position: sticky;

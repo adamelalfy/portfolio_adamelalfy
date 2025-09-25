@@ -46,10 +46,16 @@ export default class Header {
       // scroll vers le bas
       this.html.classList.add('is-scrolling-down');
       this.html.classList.remove('is-scrolling-up');
+      // scroll snap setup, when scrolling down; paddingtop and remove paddingbottom
+      this.html.classList.add('scroll-snap-scrolling-down');
+      this.html.classList.remove('scroll-snap-scrolling-up');
     } else {
       // scroll vers le haut
       this.html.classList.remove('is-scrolling-down');
       this.html.classList.add('is-scrolling-up');
+      // scroll snap setup, when scrolling up; paddingbottom and remove paddingtop
+      this.html.classList.remove('scroll-snap-scrolling-down');
+      this.html.classList.add('scroll-snap-scrolling-up');
     }
   }
 

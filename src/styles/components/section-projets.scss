@@ -1,9 +1,21 @@
 html {
     scroll-snap-type: y mandatory;
+
+    scroll-behavior: smooth;
+}
+
+.scroll-snap-scrolling-down {
+    scroll-padding-top: 100px;
+}
+
+.scroll-snap-scrolling-up {
+    scroll-margin-bottom: 100px;
 }
 
 .section-projets-cards {
     scroll-snap-align: start;
+    scroll-snap-stop: always;
+    // scroll-margin-top: 100px;
     // overflow-y: scroll;
     // scroll-snap-type: y mandatory;
     overflow-x: visible;
@@ -21,6 +33,7 @@ html {
     .card {
         .wrapper {
             position: relative;
+            height: 80vh;
         }
         scroll-snap-align: start;
 
