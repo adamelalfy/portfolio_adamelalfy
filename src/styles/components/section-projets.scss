@@ -1,5 +1,5 @@
 html {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     scroll-behavior: smooth;
 }
 
@@ -12,7 +12,7 @@ html {
 
 .section-projets-cards {
     scroll-snap-align: start;
-    scroll-snap-stop: always;
+    // scroll-snap-stop: always;
     scroll-margin-top: 100px;
     overflow-x: hidden;
 
