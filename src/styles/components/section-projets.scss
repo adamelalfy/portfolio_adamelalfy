@@ -1,30 +1,23 @@
 html {
     scroll-snap-type: y mandatory;
-
     scroll-behavior: smooth;
 }
 
 .scroll-snap-scrolling-down {
-    scroll-padding-top: 100px;
+    scroll-padding-top: 0px;
 }
-
 .scroll-snap-scrolling-up {
-    scroll-margin-bottom: 100px;
+    scroll-padding-top: 100px;
 }
 
 .section-projets-cards {
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    // scroll-margin-top: 100px;
-    // overflow-y: scroll;
-    // scroll-snap-type: y mandatory;
-    overflow-x: visible;
+    scroll-margin-top: 100px;
+    overflow-x: hidden;
 
     height: 100vh;
     width: 100%;
-    // display: flex;
-    // flex-direction: column;
-    gap: 90px;
 
     @media screen and (max-width: $breakpoint-md) {
         justify-content: space-between;
@@ -35,7 +28,7 @@ html {
             position: relative;
             height: 80vh;
         }
-        scroll-snap-align: start;
+        // scroll-snap-align: start;
 
         height: 100%;
         display: flex;
@@ -119,8 +112,23 @@ html {
                 display: flex;
                 align-items: center;
                 gap: 15px;
-
                 flex-wrap: wrap;
+
+                svg,
+                img {
+                    height: 70px;
+                    width: 70px;
+                }
+
+                @media screen and (max-width: $breakpoint-md) {
+                    height: 40px;
+                    gap: 5px;
+                    svg,
+                    img {
+                        height: 30px;
+                        width: 30px;
+                    }
+                }
             }
         }
     }
