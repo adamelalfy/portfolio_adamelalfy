@@ -3,10 +3,12 @@
     .cards {
         overflow-y: scroll;
         scroll-snap-type: y mandatory;
+        overflow-x: visible;
 
+        height: 100vh;
         width: 100%;
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
         gap: 90px;
 
         @media screen and (max-width: $breakpoint-md) {
@@ -16,7 +18,7 @@
         .card {
             scroll-snap-align: start;
 
-            height: 80vh;
+            height: 100%;
             display: flex;
             justify-content: space-between;
             position: relative;
