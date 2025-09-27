@@ -1,3 +1,51 @@
-.a-propos-intro {
+.section-a-propos {
     margin: 20vh 0;
+}
+
+.bio {
+    .bio__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px;
+        img {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        p {
+            grid-column: span 3;
+            grid-row: span 3;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        .bio__content {
+            display: unset;
+
+            img {
+                max-height: 60vh;
+            }
+            p {
+                margin: 20px 0;
+            }
+        }
+    }
+}
+
+.logiciels,
+.langages {
+    h2 {
+        font-weight: bold;
+    }
+}
+
+.logiciels {
+    .single__logiciel {
+        display: flex;
+        gap: 140px;
+        align-items: center;
+
+        margin: 50px 0;
+    }
 }
