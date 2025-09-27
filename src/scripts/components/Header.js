@@ -2,7 +2,7 @@ export default class Header {
   constructor(element) {
     this.element = element;
     this.options = {
-      threshold: 0.1, //paramétrer avec attribut Data???
+      threshold: 0, //paramétrer avec attribut Data???
     };
     this.scrollPosition = 0;
     this.lastScrollPosition = 0;
@@ -60,8 +60,12 @@ export default class Header {
   }
 
   initNavMobile() {
-    const toggle = this.element.querySelector('.js-toggle');
-    toggle.addEventListener('click', this.onToggleNav.bind(this));
+    const toggle = this.element.querySelectorAll('.js-toggle');
+    for (let i = 0; i < toggle.length; i++) {
+      const tog = toggle[i];
+
+      tog.addEventListener('click', this.onToggleNav.bind(this));
+    }
   }
 
   onToggleNav() {

@@ -8,7 +8,6 @@
             width: calc(100% - var(--spacing-lg));
         }
         //
-
         text-align: center;
         margin-bottom: 2vh;
     }
@@ -32,12 +31,54 @@
                     flex-wrap: wrap;
                     gap: 15px;
 
-                    .footer__socials svg {
-                        width: 50px;
-                        height: 50px;
+                    .footer__socials {
+                        svg {
+                            width: 50px;
+                            height: 50px;
+                        }
                     }
                 }
             }
         }
+    }
+
+    .email {
+        span {
+            position: relative;
+            &::after {
+                position: absolute;
+                top: 95%;
+                left: 0;
+                content: '';
+                width: 0%;
+                height: 2px;
+                background-color: var(--color-black);
+                transition: all 0.25s $ease-out-expo;
+            }
+        }
+
+        &:hover {
+            span {
+                &::after {
+                    width: 100%;
+                    background-color: var(--color-white);
+                }
+            }
+        }
+        // styles du p
+        font-size: typo(22px, 30px);
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        margin: 0;
+    }
+}
+
+.footer__socials a {
+    &:hover path {
+        fill: var(--color-black);
+        stroke: var(--color-white);
+        stroke-width: 2px;
     }
 }
