@@ -22,7 +22,13 @@
 }
 
 .hero {
-    margin-bottom: 140px;
+    height: 75vh;
+    margin-bottom: 20vh;
     scroll-snap-align: start;
     scroll-margin-top: 0px;
+
+    @media screen and (max-width: $breakpoint-md) {
+        height: unset;
+        margin-bottom: 150px;
+    }
 }

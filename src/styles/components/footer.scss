@@ -3,13 +3,14 @@
         // wrapper defaults
         width: calc(100% - var(--spacing-xxl));
         margin: 0 auto;
+        //
+
+        text-align: center;
+        margin-bottom: 2vh;
 
         @media screen and (max-width: $breakpoint-md) {
             width: calc(100% - var(--spacing-lg));
         }
-        //
-        text-align: center;
-        margin-bottom: 2vh;
     }
 
     .wrapper {
