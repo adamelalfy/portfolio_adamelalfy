@@ -1,5 +1,9 @@
 .section {
     margin-bottom: 20vh;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        margin-bottom: 10vh;
+    }
     h2 {
         font-weight: bold;
     }
