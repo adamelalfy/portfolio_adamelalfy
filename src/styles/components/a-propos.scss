@@ -29,20 +29,54 @@
     }
 }
 
-.logiciels,
-.langages {
-    h2 {
-        font-weight: bold;
-    }
-}
-
 .logiciels {
+    .logiciels__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        @media screen and (max-width: $breakpoint-sm) {
+            grid-template-columns: unset;
+
+            .single__logiciel {
+                margin-bottom: 5vh;
+                height: 8vh;
+                gap: 20px;
+
+                :nth-child(1) {
+                    width: 10%;
+                }
+                .figma__icon {
+                    width: 6%;
+                    margin: 0 2%;
+                }
+            }
+        }
+        @media screen and (max-width: $breakpoint-xs) {
+            .single__logiciel {
+                :nth-child(1) {
+                    width: 20%;
+                }
+                .figma__icon {
+                    width: 12%;
+                    margin: 0 4%;
+                }
+            }
+        }
+    }
     .single__logiciel {
+        :nth-child(1) {
+            width: 20%;
+        }
+        .figma__icon {
+            width: 12%;
+            margin: 0 4%;
+        }
+
         display: flex;
-        gap: 140px;
+        gap: 40px;
         align-items: center;
 
-        margin: 50px 0;
+        margin-bottom: 30px;
     }
 }
 
