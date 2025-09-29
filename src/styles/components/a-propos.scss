@@ -1,5 +1,8 @@
 .section-a-propos {
     margin-bottom: 20vh;
+    h2 {
+        font-weight: bold;
+    }
 }
 
 .bio {
@@ -112,6 +115,75 @@
 
         :nth-child(1) {
             margin-top: 10px;
+        }
+    }
+}
+
+.interets {
+    .interets__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        display: grid;
+
+        .interet {
+            position: relative;
+
+            h5 {
+                margin-bottom: 5px;
+            }
+
+            img {
+                opacity: 0.2;
+                z-index: 1;
+            }
+
+            p {
+                position: absolute;
+                top: calc(50% - 45px);
+                width: auto;
+                margin: 0 25px;
+            }
+
+            .plus {
+                position: absolute;
+                bottom: 10px;
+                right: 5px;
+                width: 45px;
+                height: 45px;
+                // border-radius: 100px;
+                background-color: var(--color-gray);
+
+                span {
+                    position: absolute;
+                    background-color: tomato;
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+
+            .plus__dark {
+                background-color: var(--color-black);
+            }
+
+            .colemak {
+                position: absolute;
+                top: 65%;
+                right: 25%;
+                width: 50%;
+                opacity: unset;
+                z-index: unset;
+            }
+
+            // tout le hover pour les cartes d'interets
+            &:hover {
+            }
+        }
+
+        // pour élever le texte du clavier pour laisser de la place à l'image
+        :nth-child(2) {
+            p {
+                top: 17%;
+            }
         }
     }
 }
