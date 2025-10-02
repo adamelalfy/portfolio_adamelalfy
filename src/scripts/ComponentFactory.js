@@ -1,10 +1,12 @@
 import Header from './components/Header.js';
+import Form from './components/Form.js';
 
 export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
     this.componentList = {
       Header,
+      Form,
     };
     this.init();
   }
