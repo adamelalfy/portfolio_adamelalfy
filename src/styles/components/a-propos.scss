@@ -86,6 +86,12 @@
         grid-template-columns: 1fr 1fr;
 
         @media screen and (max-width: $breakpoint-sm) {
+            .single__langage {
+                height: 15vh;
+            }
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
             grid-template-columns: unset;
 
             .single__langage {
@@ -115,6 +121,8 @@
         }
     }
     .single__langage {
+        height: 20vh;
+
         :nth-child(1) {
             width: 20%;
         }
