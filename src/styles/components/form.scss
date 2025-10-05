@@ -140,4 +140,12 @@
     .input__label {
         color: var(--color-error);
     }
+
+    .input__error {
+        display: block;
+    }
+}
+
+.input__error {
+    display: none;
 }
