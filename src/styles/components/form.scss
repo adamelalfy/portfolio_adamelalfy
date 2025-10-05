@@ -1,0 +1,94 @@
+.form {
+    --input-radius: 0px;
+    --input-padding: 1em;
+    fieldset {
+        border: none;
+        padding: 0;
+    }
+
+    .form__grid {
+        display: grid;
+        gap: var(--spacing-md);
+        grid-template-columns: 1fr 1fr;
+
+        .form__grid__half {
+            grid-column: 1fr;
+        }
+
+        .form__grid__full {
+            grid-column: span 2;
+        }
+
+        // @media screen and (min-width: $breakpoint-md) {
+        // grid-template-columns: 1fr 1fr;
+        // }
+    }
+}
+
+// .form__footer {
+//     display: flex;
+//     justify-content: flex-end;
+// }
+
+.input__label {
+    // p
+    font-size: typo(22px, 30px);
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin: 0;
+    // p
+
+    display: block;
+    color: var(--color-gray);
+}
+
+.input__element {
+    // p
+    font-size: typo(22px, 30px);
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin: 0;
+    // p
+
+    border-radius: var(--input-radius);
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-gray);
+    // box-shadow: 0 1px 2px var(--color-gray);
+    cursor: pointer;
+    outline: none;
+    padding: calc(var(--input-padding) - 10px);
+    // padding: var(--input-padding);
+    width: 100%;
+    color: var(--color-white);
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:active {
+        -webkit-box-shadow: inset 0 0 0 0 var(--color-black) !important;
+        -webkit-text-fill-color: var(--color-white) !important;
+    }
+
+    // hover
+    &:hover,
+    + .input__label:hover::before {
+        background-color: var(--color-black);
+        -webkit-box-shadow: inset 0 0 0 0 var(--color-dark-gray) !important;
+    }
+
+    // focus
+    &:focus,
+    &:-webkit-autofill:focus,
+    &:focus + .input__label::before {
+        background-color: var(--color-black);
+        box-shadow: 0 2px 4px var(--color-black);
+        -webkit-box-shadow: inset 0 0 0 0 tomato !important;
+    }
+
+    // autocomplete
+    &::placeholder {
+        color: var(--color-gray);
+    }
+}
