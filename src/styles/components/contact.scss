@@ -12,8 +12,24 @@
     grid-template-columns: repeat(12, 1fr);
     margin-bottom: 15vh;
 
-    @media screen and (max-width: $breakpoint-sm) {
-        margin-bottom: 10vh;
+    svg {
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        .wrapper {
+            width: unset;
+            margin: 0 45px;
+        }
+
+        .formulaire .wrapper {
+            margin-right: 0;
+        }
+
+        .infos__contact .wrapper {
+            margin-left: 0;
+            width: unset;
+        }
     }
 
     .formulaire {
@@ -27,5 +43,32 @@
 
     .infos__contact {
         grid-column: span 5;
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 65px;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        margin-bottom: 10vh;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        grid-template-columns: unset;
+        display: unset;
+
+        svg {
+            display: none;
+        }
+
+        .infos__contact {
+            margin-top: 10vh;
+            h3 {
+                margin-bottom: 0;
+            }
+        }
     }
 }
