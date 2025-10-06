@@ -1,10 +1,14 @@
 .hero-projet {
+    .wrapper {
+        position: relative;
+    }
+
     .hero-projet__media {
         position: relative;
         video {
             width: 100%;
             max-height: 75vh;
-            opacity: 0.2;
+            opacity: 0.4;
         }
 
         .hero-projet__logiciels {
@@ -19,16 +23,89 @@
             gap: 20px;
             justify-content: flex-end;
             align-items: center;
+
+            // copy-paste des logiciels de la section-projets
+            // display: flex;
+            // align-items: center;
+            // gap: 15px;
+            // flex-wrap: wrap;
+
+            svg,
+            img {
+                height: 70px;
+                width: 70px;
+            }
+
+            @media screen and (max-width: $breakpoint-md) {
+                height: 40px;
+                gap: 5px;
+                svg,
+                img {
+                    height: 50px;
+                    width: 50px;
+                }
+            }
         }
     }
 
     .hero-projet__content {
+        max-width: 90%;
+
+        position: relative;
+        bottom: 150px;
+        left: 30px;
+
         display: flex;
         align-items: start;
+        justify-content: start;
         gap: 30px;
 
-        h4 {
-            margin-bottom: 25px;
+        svg {
+            max-height: min-content;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: start;
+            margin-top: 20px;
+            gap: 25px;
+
+            h4 {
+                margin-bottom: 35px;
+            }
+        }
+        @media screen and (max-width: $breakpoint-md) {
+            left: 20px;
+            gap: 20px;
+            bottom: 120px;
+            .text {
+                h4 {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            left: 10px;
+            gap: 15px;
+            bottom: 120px;
+            position: unset;
+
+            svg {
+                position: relative;
+                bottom: 200px;
+                left: 5px;
+                height: 400px;
+                max-height: unset;
+            }
+
+            .text {
+                h4 {
+                    margin-bottom: 35px;
+                }
+            }
         }
     }
 }
