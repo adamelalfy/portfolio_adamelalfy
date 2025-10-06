@@ -9,6 +9,8 @@
             width: 100%;
             max-height: 75vh;
             opacity: 0.4;
+            // position: relative;
+            // left: 0;
         }
 
         .hero-projet__logiciels {
@@ -17,18 +19,11 @@
             height: max-content;
             top: 15px;
             right: 20px;
-            // padding-right: 10px;
 
             display: flex;
             gap: 20px;
             justify-content: flex-end;
             align-items: center;
-
-            // copy-paste des logiciels de la section-projets
-            // display: flex;
-            // align-items: center;
-            // gap: 15px;
-            // flex-wrap: wrap;
 
             svg,
             img {
