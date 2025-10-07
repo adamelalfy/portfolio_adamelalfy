@@ -122,3 +122,22 @@
         text-decoration: underline;
     }
 }
+
+.projet-systeme__grid {
+    display: grid;
+    column-gap: 80px;
+    row-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    .two-col {
+        grid-column: span 2;
+        img {
+            max-width: 100%;
+        }
+    }
+    @media screen and (max-width: $breakpoint-md) {
+        display: unset;
+        .single {
+            margin-bottom: 10vh;
+        }
+    }
+}
