@@ -36,6 +36,9 @@
                         svg {
                             width: 50px;
                             height: 50px;
+                            g path {
+                                fill: tomato;
+                            }
                         }
                     }
                 }
@@ -45,6 +48,11 @@
 }
 
 .socials a {
+    path {
+        // fill: tomato;
+        transition: all 0.4s $ease-out-quint;
+    }
+
     &:hover path {
         fill: var(--color-black);
         stroke: var(--color-white);
