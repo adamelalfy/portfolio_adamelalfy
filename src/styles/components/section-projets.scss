@@ -1,122 +1,153 @@
 .section-projets-cards {
-    overflow-x: hidden;
-    // overflow-y: hidden;
+    .card__layout {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
 
-    height: auto;
-    // padding-bottom: 20vh;
-    // width: 100%;
+        .card {
+            .card__media {
+            }
 
-    // @media screen and (max-width: $breakpoint-md) {
-    //     justify-content: space-between;
-    // }
-
-    .card {
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-        // overflow-x: hidden;
-        height: 80vh;
-        margin-bottom: 15vh;
-
-        .wrapper {
-            position: relative;
-        }
-
-        @media screen and (max-width: $breakpoint-md) {
-            flex-direction: column;
-            justify-content: unset;
-            height: unset;
-            gap: 20px;
             .card__content {
-                width: 100%;
-            }
-        }
-
-        .card__media {
-            position: absolute;
-            left: 0;
-            width: 55vw;
-            height: 100%;
-            transition: all 0.5s $ease-out-expo;
-
-            @media screen and (max-width: $breakpoint-md) {
-                position: unset;
-                max-height: 45vh;
-                width: 100%;
-                aspect-ratio: 16 / 9;
-            }
-
-            video {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-
-            &:hover {
-                @media screen and (min-width: $breakpoint-md) {
-                    width: 80vw;
-
-                    + .card__content {
-                        left: 60vw;
-
-                        background-color: rgba($color: #000000, $alpha: 0.5);
-                        // backdrop-filter: hue-rotate(320deg);
-                    }
-                }
-            }
-        }
-
-        .card__content {
-            position: absolute;
-            left: 55vw;
-            margin-left: 15px;
-            top: 0;
-            transition: all 0.7s $ease-out-quint;
-            padding: 20px;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 30px;
-            width: 28vw;
-            overflow: hidden;
-
-            @media screen and (max-width: $breakpoint-md) {
-                position: unset;
-                width: 100%;
-                margin-left: unset;
-                margin-top: 10px;
-                top: calc(100vw / 9);
-                left: 0;
-                gap: 20px;
-
-                display: flex;
-            }
-
-            .card__content__logiciels {
-                display: flex;
-                align-items: center;
-                gap: 15px;
-                flex-wrap: wrap;
-
-                svg,
-                img {
-                    height: 70px;
-                    width: 70px;
-                }
-
-                @media screen and (max-width: $breakpoint-md) {
-                    height: 40px;
-                    gap: 5px;
-                    svg,
-                    img {
-                        height: 30px;
-                        width: 30px;
-                    }
-                }
             }
         }
     }
 }
+
+/* ==========================================================================
+    / ci-bas git le code css version 1 pour la section projet de la page accueil.
+   ========================================================================== */
+
+// .section-projets-cards {
+//     .card__layout {
+//         display: grid;
+//         grid-template-columns: repeat(2, 1fr);
+//         column-gap: 15px;
+//         row-gap: 15px;
+//     }
+
+//     h2 {
+//         margin-bottom: 10px;
+//     }
+
+//     // overflow-x: hidden;
+//     // overflow-y: hidden;
+
+//     // height: auto;
+//     // padding-bottom: 20vh;
+//     // width: 100%;
+
+//     // @media screen and (max-width: $breakpoint-md) {
+//     //     justify-content: space-between;
+//     // }
+
+//     .card {
+//         // height: 100%;
+//         display: flex;
+//         justify-content: space-between;
+//         gap: 20px;
+//         // overflow-x: hidden;
+//         height: 80vh;
+//         margin-bottom: 15vh;
+
+//         .wrapper {
+//             position: relative;
+//         }
+
+//         @media screen and (max-width: $breakpoint-md) {
+//             flex-direction: column;
+//             justify-content: unset;
+//             height: unset;
+//             gap: 20px;
+//             .card__content {
+//                 width: 100%;
+//             }
+//         }
+
+//         .card__media {
+//             position: absolute;
+//             left: 0;
+//             width: 55vw;
+//             height: 100%;
+//             transition: all 0.5s $ease-out-expo;
+
+//             @media screen and (max-width: $breakpoint-md) {
+//                 position: unset;
+//                 max-height: 45vh;
+//                 width: 100%;
+//                 aspect-ratio: 16 / 9;
+//             }
+
+//             video {
+//                 width: 100%;
+//                 height: 100%;
+//                 object-fit: cover;
+//             }
+
+//             &:hover {
+//                 @media screen and (min-width: $breakpoint-md) {
+//                     width: 80vw;
+
+//                     + .card__content {
+//                         left: 60vw;
+
+//                         background-color: rgba($color: #000000, $alpha: 0.5);
+//                         // backdrop-filter: hue-rotate(320deg);
+//                     }
+//                 }
+//             }
+//         }
+
+//         .card__content {
+//             position: absolute;
+//             left: 55vw;
+//             margin-left: 15px;
+//             top: 0;
+//             transition: all 0.7s $ease-out-quint;
+//             padding: 20px;
+
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: space-between;
+//             align-items: flex-start;
+//             gap: 30px;
+//             width: 28vw;
+//             overflow: hidden;
+
+//             @media screen and (max-width: $breakpoint-md) {
+//                 position: unset;
+//                 width: 100%;
+//                 margin-left: unset;
+//                 margin-top: 10px;
+//                 top: calc(100vw / 9);
+//                 left: 0;
+//                 gap: 20px;
+
+//                 display: flex;
+//             }
+
+//             .card__content__logiciels {
+//                 display: flex;
+//                 align-items: center;
+//                 gap: 15px;
+//                 flex-wrap: wrap;
+
+//                 svg,
+//                 img {
+//                     height: 70px;
+//                     width: 70px;
+//                 }
+
+//                 @media screen and (max-width: $breakpoint-md) {
+//                     height: 40px;
+//                     gap: 5px;
+//                     svg,
+//                     img {
+//                         height: 30px;
+//                         width: 30px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

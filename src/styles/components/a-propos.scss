@@ -32,10 +32,10 @@
 .logiciels {
     .logiciels__grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
 
         @media screen and (max-width: $breakpoint-sm) {
-            grid-template-columns: unset;
+            grid-template-columns: 1fr 1fr;
 
             .single__logiciel {
                 margin-bottom: 5vh;
@@ -51,7 +51,14 @@
                 }
             }
         }
+
         @media screen and (max-width: $breakpoint-xs) {
+            grid-template-columns: unset;
+
+            h2 {
+                margin-bottom: 15px;
+            }
+
             .single__logiciel {
                 :nth-child(1) {
                     width: 20%;
@@ -83,7 +90,11 @@
 .langages {
     .langages__grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        @media screen and (max-width: $breakpoint-md) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
 
         @media screen and (max-width: $breakpoint-sm) {
             .single__langage {
@@ -92,7 +103,7 @@
         }
 
         @media screen and (max-width: $breakpoint-sm) {
-            grid-template-columns: unset;
+            grid-template-columns: 1fr 1fr;
 
             .single__langage {
                 margin-bottom: 5vh;
@@ -109,6 +120,7 @@
             }
         }
         @media screen and (max-width: $breakpoint-xs) {
+            grid-template-columns: unset;
             .single__langage {
                 :nth-child(1) {
                     width: 20%;
@@ -132,7 +144,7 @@
         // }
 
         display: flex;
-        gap: 40px;
+        gap: 15px;
         align-items: center;
 
         margin-bottom: 30px;
