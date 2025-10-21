@@ -2,7 +2,7 @@
     cursor: pointer;
     color: var(--color-black);
     font-family: 'Lato';
-    font-size: typo(24px, 36px);
+    font-size: typo(22px, 25px);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -51,6 +51,6 @@
 
     @media screen and (max-width: $breakpoint-sm) {
         padding: 10px 35px;
-        font-size: typo(16px, 26px);
+        font-size: typo(16px, 22px);
     }
 }

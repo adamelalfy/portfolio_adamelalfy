@@ -9,7 +9,7 @@
 // }
 
 h1 {
-    font-size: typo(70px, 220px);
+    font-size: typo(70px, 150px);
     font-family: Helvetica, Arial;
     font-style: normal;
     font-weight: 700;
@@ -18,15 +18,16 @@ h1 {
 }
 
 h2 {
-    font-size: typo(60px, 135px);
+    font-size: typo(50px, 100px);
     font-family: Helvetica, Arial;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin: 0;
 }
 
 h3 {
-    font-size: typo(30px, 85px);
+    font-size: typo(30px, 65px);
     font-family: Helvetica, Arial;
     font-style: normal;
     font-weight: 400;
@@ -34,7 +35,7 @@ h3 {
 }
 
 h4 {
-    font-size: typo(30px, 60px);
+    font-size: typo(25px, 40px);
     font-family: Helvetica, Arial;
     font-style: normal;
     font-weight: 700;
@@ -43,7 +44,7 @@ h4 {
 }
 
 h5 {
-    font-size: typo(25px, 43px);
+    font-size: typo(22px, 30px);
     font-family: Helvetica, Arial;
     font-style: normal;
     font-weight: 400;
@@ -52,7 +53,7 @@ h5 {
 }
 
 p {
-    font-size: typo(22px, 30px);
+    font-size: typo(20px, 24px);
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;

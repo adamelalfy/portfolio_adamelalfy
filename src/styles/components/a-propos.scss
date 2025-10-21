@@ -2,7 +2,7 @@
     .bio__content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         gap: 20px;
         img {
             grid-column: span 2;
@@ -293,4 +293,8 @@
         //     }
         // }
     }
+}
+
+.a-propos-intro {
+    margin: 8vh 0;
 }
