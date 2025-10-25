@@ -1,4 +1,10 @@
 .hero-projet {
+    height: 110vh;
+
+    @media screen and (max-width: $breakpoint-md) {
+        height: 70vh;
+    }
+
     .wrapper {
         position: relative;
     }
