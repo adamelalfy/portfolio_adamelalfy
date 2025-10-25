@@ -19,7 +19,7 @@ class tim_form
 {
 
     const COURRIEL_CC = 'adamelalfy06@gmail.com';
-    const COURRIEL_FROM = 'Portfolio en ligne - Tim <no-reply-tim@imbert.ca>';
+    const COURRIEL_FROM = 'Adam El Alfy - Portfolio <adamelalfy06@gmail.com>';
 
 
     public $tim_form_nom = '';
@@ -47,28 +47,11 @@ class tim_form
 
         $html = "
         $msg
-        <p>Date: $datetime</p>
-        <p><strong>Bonjour {$this->tim_form_nom},</strong><br><br>
-        Nous avons bien reçu votre commentaire.<br><br>
+        <p>Date: $datetime</p><br>
+        <p><strong>{$this->tim_form_nom},</strong><br><br>
+        Sachez que votre communication m'a bien été transmise.<br><br>
 
-        
-        
-        MERCI et au plaisir,<br><br>
-        
-        L’équipe du Portfolio de ...... <br><br>
-
-        <strong> Voici les détails de  votre message.</strong></p>";
-
-        $html .= "<h3>Identification de l'usager</h3>";
-
-        $html .= "<span class=\"descriptions\" >Nom:</span> <span class=\"informations\">{$this->tim_form_nom}</span><br>";
-
-        $html .= "<span class=\"descriptions\" >Courriel:</span> <span class=\"informations\">{$this->tim_form_courriel}</span></p>";
-
-        $html .= "<h3>Message:</h3>";
-        $html .= "<p><span class=\"descriptions\" >Message:</span> <span class=\"informations\">{$this->tim_form_commentaires}</span><br>";
-
-
+        Merci! ✅";
 
         return '<div class="tim_form">' . $html . '</div>';
     }
@@ -90,6 +73,12 @@ class tim_form
        
         <style>
             
+            html {
+                background-color: #17171e;
+                color: #fcfcff;
+                font-family: Helvetica, Arial;
+            }
+        
             .tim_form span {
                 display: inline-block;                
                 font-size: 16px;
@@ -109,34 +98,26 @@ class tim_form
          </head>
         <body>
             <div class='tim_form'>
-                <h1>Bonjour,</h1>
-                <p>Ceci est un test d\'envoi d\'email en <strong>format HTML</strong> avec la fonction mail() de PHP.</p>
-                <p>Merci de votre attention.</p>
-            
 
-                
                 <p>Date: $datetime</p>
                 <p><strong>Bonjour {$this->tim_form_nom},</strong><br><br>
-                Nous avons bien reçu votre commentaire.<br><br>
+                Votre formulaire de contact a bien été reçu; Je vous contacterai sous peu.<br><br>
 
                 
                 
-                MERCI et au plaisir,<br><br>
+                Merci et au plaisir de vous rencontrer!<br><br>
                 
-                L’équipe du Portfolio de ...... <br><br>
+                Adam El Alfy <br><br>
 
                 <strong> Voici les détails de  votre message.</strong></p>";
-
-        $html .= "<h3>Identification de l'usager</h3>";
 
         $html .= "<span class=\"descriptions\" >Nom:</span> <span class=\"informations\">{$this->tim_form_nom}</span><br>";
 
         $html .= "<span class=\"descriptions\" >Courriel:</span> <span class=\"informations\">{$this->tim_form_courriel}</span></p>";
 
-        $html .= "<h3>Message:</h3>";
         $html .= "<p><span class=\"descriptions\" >Message:</span> <span class=\"informations\">{$this->tim_form_commentaires}</span><br>";
 
-        $html .= "<p>Date et heure de la demande:</p>";
+        $html .= "<p>Date et heure de l'envoi du formulaire :</p>";
         $html .= "<p><span class=\"informations\">{$datetime}</span></p>";
 
         $html .= "</div>";
@@ -161,8 +142,8 @@ class tim_form
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
         // En-tête supplémentaire (expéditeur)
-        $headers .= 'From: Portfolio en ligne - Tim QA <no-reply-tim@imbert.ca>' . "\r\n";
-        $headers .= 'Reply-To: expediteur@example.com' . "\r\n";
+        $headers .= 'From: Adam El Alfy <no-reply@aelalfy.dectim.ca>' . "\r\n";
+        $headers .= 'Reply-To: adamelalfy06@gmail.com' . "\r\n";
 
 
         // Ajouter les adresses en CC et BCC
