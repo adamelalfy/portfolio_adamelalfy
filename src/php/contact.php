@@ -143,7 +143,7 @@ include "class/gbi_portfolio.class.php";
                 <a href="https://en.wikipedia.org/wiki/Curriculum_vitae" class="email"><span>Curriculum Vitae</span></a>
                 <div class="socials">
                     <!-- linkedin -->
-                    <a href="www.linkedin.com/in/adam-el-alfy" class="socials__icon" target="_blank">
+                    <a href="https://linkedin.com/in/adam-el-alfy" class="socials__icon" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" viewBox="0 0 86 86" fill="none">
                             <g clip-path="url(#clip0_7557_108)">
                                 <path d="M0 0V86H86V0H0ZM30.9734 60.9895H22.5918V34.1648H30.9734V60.9895ZM26.5559 30.8055H26.4887C23.4484 30.8055 21.4832 28.7563 21.4832 26.1527C21.4832 23.4988 23.5156 21.5 26.6062 21.5C29.6969 21.5 31.5949 23.4988 31.6621 26.1527C31.6789 28.7395 29.7137 30.8055 26.5559 30.8055ZM64.5 60.9895H54.993V47.1152C54.993 43.4871 53.5148 41.0012 50.2395 41.0012C47.7367 41.0012 46.3426 42.6809 45.7043 44.2934C45.4691 44.8645 45.5027 45.6707 45.5027 46.4937V60.9895H36.0797C36.0797 60.9895 36.1973 36.3988 36.0797 34.1648H45.5027V38.3809C46.057 36.5332 49.0637 33.9129 53.8676 33.9129C59.8305 33.9129 64.5 37.7762 64.5 46.0738V60.9895Z" fill="#FCFCFF" />
@@ -189,7 +189,7 @@ include "class/gbi_portfolio.class.php";
                 <div class="footer__buttons">
                     <div class="socials">
                         <!-- linkedin -->
-                        <a href="www.linkedin.com/in/adam-el-alfy" class="socials__icon" target="_blank">
+                        <a href="https://linkedin.com/in/adam-el-alfy" class="socials__icon" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" viewBox="0 0 86 86" fill="none">
                                 <g clip-path="url(#clip0_7557_108)">
                                     <path d="M0 0V86H86V0H0ZM30.9734 60.9895H22.5918V34.1648H30.9734V60.9895ZM26.5559 30.8055H26.4887C23.4484 30.8055 21.4832 28.7563 21.4832 26.1527C21.4832 23.4988 23.5156 21.5 26.6062 21.5C29.6969 21.5 31.5949 23.4988 31.6621 26.1527C31.6789 28.7395 29.7137 30.8055 26.5559 30.8055ZM64.5 60.9895H54.993V47.1152C54.993 43.4871 53.5148 41.0012 50.2395 41.0012C47.7367 41.0012 46.3426 42.6809 45.7043 44.2934C45.4691 44.8645 45.5027 45.6707 45.5027 46.4937V60.9895H36.0797C36.0797 60.9895 36.1973 36.3988 36.0797 34.1648H45.5027V38.3809C46.057 36.5332 49.0637 33.9129 53.8676 33.9129C59.8305 33.9129 64.5 37.7762 64.5 46.0738V60.9895Z" fill="#FCFCFF" />
