@@ -168,4 +168,27 @@
     svg {
         max-width: 80%;
     }
+
+    // carousel / swiper
+    //
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: var(--color-white);
+        padding: 8px;
+        background-color: var(--color-black);
+        scale: 1.6;
+
+        margin: 30px !important;
+        transition: all 0.3s $ease-out-quint;
+
+        @media screen and (max-width: $breakpoint-md) {
+            scale: 1.2;
+            margin: 10px !important;
+        }
+
+        &:hover {
+            background-color: var(--color-dark-gray);
+            scale: 2.1;
+        }
+    }
 }

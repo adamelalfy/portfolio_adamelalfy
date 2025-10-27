@@ -1,6 +1,6 @@
 import Header from './components/Header.js';
 import Form from './components/Form.js';
-import Swiper from './components/Swiper.js';
+import Carousel from './components/Carousel.js';
 
 export default class ComponentFactory {
   constructor() {
@@ -8,7 +8,7 @@ export default class ComponentFactory {
     this.componentList = {
       Header,
       Form,
-      Swiper,
+      Carousel,
     };
     this.init();
   }
