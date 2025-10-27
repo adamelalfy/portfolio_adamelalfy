@@ -176,7 +176,7 @@
         color: var(--color-white);
         padding: 8px;
         background-color: var(--color-black);
-        scale: 1.6;
+        scale: 1.4;
 
         margin: 30px !important;
         transition: all 0.3s $ease-out-quint;
@@ -188,7 +188,7 @@
 
         &:hover {
             background-color: var(--color-dark-gray);
-            scale: 2.1;
+            scale: 1.6;
         }
     }
 }
