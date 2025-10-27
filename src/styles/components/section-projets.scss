@@ -58,7 +58,13 @@
                 align-items: baseline;
                 padding-top: 15px;
                 padding-left: 10px;
-                opacity: 0.2;
+                > * {
+                    opacity: 0.2;
+                }
+
+                h4 {
+                    opacity: 100% !important;
+                }
                 transition: all 0.3s $ease-out-quint;
 
                 @media screen and (max-width: $breakpoint-md) {
@@ -97,8 +103,12 @@
                 }
 
                 .card__content {
-                    opacity: unset;
+                    // opacity: unset;
                     margin-left: 10px;
+
+                    > * {
+                        opacity: unset;
+                    }
                 }
             }
         }
