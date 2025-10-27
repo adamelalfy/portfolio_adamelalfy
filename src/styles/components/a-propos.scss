@@ -4,6 +4,10 @@
     }
 }
 
+.a-propos-intro {
+    margin: 14vh 0;
+}
+
 .bio {
     .bio__content {
         display: grid;
@@ -11,12 +15,13 @@
         grid-template-rows: 1fr 1fr;
         gap: 20px;
         img {
-            grid-column: span 2;
+            grid-column: span 1;
             grid-row: span 2;
+            // max-height: min-content;
         }
 
         p {
-            grid-column: span 3;
+            grid-column: span 4;
             grid-row: span 3;
         }
     }
@@ -27,9 +32,11 @@
 
             img {
                 max-height: 60vh;
+                grid-column: span 2;
             }
             p {
                 margin: 20px 0;
+                grid-column: span 2;
             }
         }
     }
@@ -311,8 +318,4 @@
         //     }
         // }
     }
-}
-
-.a-propos-intro {
-    margin: 8vh 0;
 }
