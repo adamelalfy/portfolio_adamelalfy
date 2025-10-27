@@ -1,4 +1,6 @@
 .footer {
+    background-color: var(--color-black);
+    padding-top: 25px;
     .copyright__wrapper {
         // wrapper defaults
         width: calc(100% - var(--spacing-xxl));
@@ -6,7 +8,7 @@
         //
 
         text-align: center;
-        margin-bottom: 2vh;
+        padding-bottom: 2vh;
 
         @media screen and (max-width: $breakpoint-md) {
             width: calc(100% - var(--spacing-lg));

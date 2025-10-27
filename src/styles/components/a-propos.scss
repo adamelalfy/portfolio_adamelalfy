@@ -15,24 +15,27 @@
         grid-template-rows: 1fr 1fr;
         gap: 20px;
         img {
-            grid-column: span 1;
+            grid-column: span 2;
             grid-row: span 2;
+            max-height: 50vh;
             // max-height: min-content;
         }
 
         p {
-            grid-column: span 4;
+            grid-column: span 3;
             grid-row: span 3;
         }
     }
 
     @media screen and (max-width: $breakpoint-md) {
         .bio__content {
-            display: unset;
+            // display: unset;
+            grid-template-columns: 1fr;
 
             img {
                 max-height: 60vh;
                 grid-column: span 2;
+                order: -1;
             }
             p {
                 margin: 20px 0;
