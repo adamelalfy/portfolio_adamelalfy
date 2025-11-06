@@ -140,7 +140,7 @@ include "class/gbi_portfolio.class.php";
                 <a class="email" href="mailto:adamelalfy06@gmail.com" target="_blank"><span>adamelalfy06@gmail.com</span></a>
                 <a class="num-tel" href="tel:+15148631312" target="_blank"><span>(514) 863-1312</span></a>
                 <!-- <button class="button"><span>curriculum vitae</span></button> -->
-                <a href="https://en.wikipedia.org/wiki/Curriculum_vitae" class="email"><span>Curriculum Vitae</span></a>
+                <a href="../assets/images/Curriculum Vitae.pdf" class="email"><span>Curriculum Vitae</span></a>
                 <div class="socials">
                     <!-- linkedin -->
                     <a href="https://linkedin.com/in/adam-el-alfy" class="socials__icon" target="_blank">
